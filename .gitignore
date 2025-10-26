@@ -57,11 +57,7 @@ _ReSharper*/
 *.~*
 
 # Uploaded files / user content
-Uploads/
-img/
-Content/assets/video/
 Content/ckeditor/userfiles/
-Content/Clients/dist/
 Content/Clients/plugins/
 
 # Logs
