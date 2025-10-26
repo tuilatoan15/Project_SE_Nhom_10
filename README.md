@@ -1,6 +1,6 @@
 # 🌟 Project_SE_Nhom_10
 
-![Project Banner](./img/banner.png)  
+![Project Banner](https://github.com/tuilatoan15/Project_SE_Nhom_10/blob/main/img/home.png)  
 A comprehensive student project for Software Engineering course – Team 10.
 
 ---
@@ -20,10 +20,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ## 🖼️ Screenshots & Demo
 
-![Login Page](./img/login.png)  
-*Login screen with authentication*
-
-![Dashboard](./img/dashboard.png)  
+![Dashboard](https://github.com/tuilatoan15/Project_SE_Nhom_10/blob/main/img/admin.png)  
 *Dashboard showcasing main functionalities*
 
 > GIF demo (optional): `./img/demo.gif`
@@ -110,13 +107,13 @@ Contributions are welcome! Please follow these steps:
 ---
 
 ## 👥 Team 10
-+---+------------------+--------------+
-|STT|       Name       |     MSSV     |
-|---+------------------+--------------+
-| 1 | Trần Khôi Nguyên |  6351071049  |
-| 2 | Nguyễn Hữu Toàn  |  6351071071  |
-| 3 | Nguyễn Thành Luân|  6351071073  |
-+---+------------------+--------------+
+
+| STT | Họ và tên          | MSSV        |
+|:---:|:-------------------|:------------|
+|  1  | Trần Khôi Nguyên   | 6351071049  |
+|  2  | Nguyễn Hữu Toàn    | 6351071071  |
+|  3  | Nguyễn Thành Luân  | 6351071073  |
+
 ---
 
 ## 📄 License
