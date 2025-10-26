@@ -1,0 +1,76 @@
+﻿@model  IEnumerable<WebJob.Models.EF.Job>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var item in Model)
+    {
+        var strImge = "";
+        var img = item.CompanyImages.FirstOrDefault(x => x.IsDefault);
+        if (img != null)
+        {
+            strImge = img.ImageURL;
+        }
+        <div class="job pagi">
+            <div class="job-content">
+                <div class="job-logo">
+                    <a href="/chi-tiet/@item.Alias-p@(item.JobID)">
+                        <img src="@strImge" class="job-logo-ima" alt="job-logo">
+                    </a>
+                </div>
+
+                <div class="job-desc">
+                    <div class="job-title">
+                        <a href="/chi-tiet/@item.Alias-p@(item.JobID)">@item.JobTitle</a>
+                    </div>
+                    <div class="job-company">
+                        <a href="#">@item.Company.CompanyName</a> | <a href="#" class="job-address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            @item.Location.LocationName
+                        </a>
+                    </div>
+
+                    <div class="job-inf">
+                        @*<div class="job-main-skill">
+                                <i class="fa fa-code" aria-hidden="true"></i>  <a href="#"> Java</a>
+                            </div>*@
+                        <div class="job-salary">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                            <span>@item.Salary.SalaryRange</span>
+
+                        </div>
+                        <div class="job-deadline">
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>  Hạn nộp: <strong>@item.EndDate.ToString("dd/MM/yyyy")</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-btn-appl">
+                    <a href="/ung-tuyen?jobId=@item.JobID" class="btn btn-appl">Ứng tuyển ngay</a>
+                    <a href="#" data-id="@item.JobID" class="btn btn-danger btnAddSave"><i class="fa-solid fa-bookmark"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+    }
+}
+@section scripts {
+    <script>
+        function loadUrgentJobs() {
+            $.ajax({
+                url: '/employer/jobs/Partial_JobNow', 
+                type: 'GET',
+                success: function (data) {
+                    $('#urgent-jobs-container').html(data); // Cập nhật nội dung danh sách công việc
+                },
+                error: function () {
+                    console.error("Không thể tải danh sách công việc.");
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            loadUrgentJobs(); // Gọi lần đầu tiên khi trang được tải
+            setInterval(loadUrgentJobs, 12000); // Cập nhật mỗi 2 phút 
+        });
+    </script>
+}
