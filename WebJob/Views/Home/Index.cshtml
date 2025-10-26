@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- job board & sidebar section  -->
+<div class="container-fluid jb-wrapper">
+    <div class="container">
+        <div class="row">
+            <!-- job board -->
+            <div class="col-md-8 col-sm-12 col-12">
+                <div class="job-board-wrap">
+                    <h2 class="widget-title">
+                        <span>Tuyển gấp</span>
+                    </h2>
+
+                    <div class="job-group">
+                        @Html.Action("Partial_JobNow", "Jobs")
+
+                        <div class="readmorestyle-wrap">
+                            <a href="/viec-lam" class="readallstyle reads1">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- (end) job board -->
+            <!-- sidebar -->
+            <div class="col-md-4 col-sm-12 col-12 clear-left">
+                <div class="job-sidebar">
+                    <h2 class="widget-title">
+                        <span>Ngành Nghề</span>
+                    </h2>
+                    <div class="catelog-list">
+                        @Html.Action("MenuJobCategory", "Menu")
+                    </div>
+                </div>
+
+                <div class="job-sidebar">
+                    <div class="sb-banner">
+                        <img src="~/Content/assets/img/adv.jpg" class="advertisement" />
+                    </div>
+                </div>
+            </div>
+            <!-- (end) sidebar -->
+        </div>
+    </div>
+</div>
+<!-- (end) job board & sidebar section  -->
+
+<div class="clearfix"></div>
+
+
+
+
+<!-- job board v2 -->
+<div class="container-fluid">
+    <div class="container job-board2">
+        <div class="row">
+            <div class="col-md-12 job-board2-wrap-header">
+                <h3>Tin tuyển dụng, việc làm mới nhất</h3>
+            </div>
+            <div class="col-md-12 job-board2-wrap">
+                @Html.Action("Partial_JobLatest", "Jobs")
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true,
+                    slideBy: 2,
+                    dots: false
+                },
+                600: {
+                    items: 4,
+                    nav: false,
+                    slideBy: 2,
+                    dots: false
+                },
+                1000: {
+                    items: 6,
+                    nav: true,
+                    loop: false,
+                    slideBy: 2
+                }
+            }
+        });
+    })
+</script>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="home-ads">
+                    <a href="#">
+                        <img src="~/Content/assets/img/hna.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- (end) job board v2 -->
+
+<div class="clearfix"></div>
+
+<!-- top employer -->
+<div class="container-fluid">
+    <div class="container top-employer">
+        <div class="row">
+            <div class="col-md-12 top-employer-contain">
+                <div class="header">
+                    <h3>Nhà tuyển dùng hàng đầu</h3>
+                </div>
+                @Html.Action("Partial_CompanyLogos", "Jobs")
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- (end) top employer -->
+
+
+<div class="clearfix"></div>
+
+
+<!-- job-best-salary -->
+<div class="container-fluid">
+    <div class="container job-best-salary">
+        <div class="row">
+            <div class="col-md-12 job-board2-wrap-header job-best-salary-header">
+                <h3><i class="fa fa-briefcase pr-2"></i> Việc làm lương cao</h3>
+            </div>
+        </div>
+        @Html.Action("Partial_HighSalaryJobs", "Jobs")
+
+    </div>
+</div>
+<!-- (end) job-best-salary -->
+
+
+
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="home-ads">
+                    <a href="#">
+                        <img src="~/Content/assets/img/hna2.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- news -->
+@Html.Action("Partial_News_Home", "News")
+<!-- (end) news -->

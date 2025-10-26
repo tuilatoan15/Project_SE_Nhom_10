@@ -1,0 +1,68 @@
+# Build Folders
+bin/
+obj/
+App_Data/*.mdf
+App_Data/*.ldf
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncb
+*.sdf
+*.cache
+*.dbmdl
+*.bak
+*.backup
+*.log
+
+# Packages
+packages/
+*.nupkg
+*.snupkg
+
+# Node / NPM / Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Publish
+*.publish.xml
+*.publishsettings
+*.pubxml
+*.pubxml.user
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# ASP.NET specific
+*.aspx.cs
+*.designer.cs
+*.dll
+*.pdb
+*.cache
+*.generated.cs
+*.map
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+*.~*
+
+# Uploaded files / user content
+Uploads/
+img/
+Content/assets/video/
+Content/ckeditor/userfiles/
+Content/Clients/dist/
+Content/Clients/plugins/
+
+# Logs
+*.log
