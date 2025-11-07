@@ -1,0 +1,276 @@
+﻿<!-- Sidebar -->
+<div class="sidebar">
+    <!-- Sidebar user (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+            <img src="~/Content/clients/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+            <a href="/admin/home" class="d-block">Admin</a>
+        </div>
+    </div>
+
+  
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <i class="fas fa-th-list"></i>
+                    <p>
+                        Danh mục
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/Category" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p> Danh mục menu trang</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="~/admin/categoryproduct" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p> Danh mục gói</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/product" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Gói dịch vụ</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <i class="fas fa-window-maximize"></i>
+                    <p>
+                        Thông tin công việc
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/salary" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p> Mức lương</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/skill" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Kỹ năng</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/Experience" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Kinh nghiệm</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin" class="nav-link">
+                    <i class="fas fa-list-ul"></i>
+                    <p>
+                        Quản lý công việc
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/jobcategory" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Danh mục công việc</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/jobs" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Danh sách việc làm</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin" class="nav-link">
+                    <i class="fas fa-building"></i>
+                    <p>
+                        Quản lý công ty
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    @*<li class="nav-item">
+                    <a href="/admin/company" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Thông tin công ty</p>
+                    </a>
+                </li>*@
+                    <li class="nav-item">
+                        <a href="/admin/company" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Hình ảnh công ty</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin" class="nav-link">
+                    <i class="fas fa-user-tie"></i>
+                    <p>
+                        Quản lý Tài khoản
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/role" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Quản lý quyền truy cập</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/account" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Quản lý tài khoản</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/verifyaccount" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Xác thực tài khoản</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>
+                        Quản lý bán hàng
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/order" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Đơn hàng</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/Statistical" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Doanh thu</p>
+                        </a>
+                    </li>
+                    @*<li class="nav-item">
+                    <a href="/admin/verifyaccount" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Xác thực tài khoản</p>
+                    </a>
+                </li>*@
+
+                </ul>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="/admin/news" class="nav-link">
+                    <i class="fas fa-user-edit"></i>
+                    <p>
+                        Tin Tức
+                        @*<span class="right badge badge-danger">New</span>*@
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin/articels" class="nav-link">
+                    <i class="fas fa-sticky-note"></i>
+                    <p>
+                        Bài viết
+                        @*<span class="right badge badge-danger">New</span>*@
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin/message/Conversations" class="nav-link">
+                    <i class="fas fa-sticky-note"></i>
+                    <p>
+                        Tin nhắn
+                        @*<span class="right badge badge-danger">New</span>*@
+                    </p>
+                </a>
+            </li>
+
+            @*<li class="nav-item">
+            <a href="/admin/order" class="nav-link">
+                <i class="fas fa-ad"></i>
+                <p>
+                    Quảng cáo
+
+                </p>
+            </a>
+        </li>*@
+
+            <li class="nav-item">
+                <a href="/admin/contactt" class="nav-link">
+                    <i class="fas fa-comments"></i>
+                    <p>
+                        Phản hồi
+
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/admin/settingsystem" class="nav-link">
+                    <i class="fas fa-cog"></i>
+                    <p>
+                        Cấu hình hệ thống
+
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:document.getElementById('logOffDForm').submit()" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <p>
+                        Đăng xuất
+
+                    </p>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+</div>
+<!-- /.sidebar -->
+
+@if (Request.IsAuthenticated)
+{
+    <div style="display:none">
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { @id = "logOffDForm" }))
+        {
+            @Html.AntiForgeryToken()
+        }
+    </div>
+}
