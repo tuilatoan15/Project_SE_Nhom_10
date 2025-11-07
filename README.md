@@ -1,11 +1,11 @@
-# 🌟 Project_SE_Nhom_10
+# Project_SE_Nhom_10 - Job Portal
 
 ![Project Banner](https://github.com/tuilatoan15/Project_SE_Nhom_10/blob/main/img/home.png)  
 A comprehensive student project for Software Engineering course – Team 10.
 
 ---
 
-## 🚀 About The Project
+## About The Project
 
 Project_SE_Nhom_10 is a web application built for learning and demonstrating software engineering principles, from requirement analysis to deployment. The system focuses on managing tasks/jobs in a structured environment with a .NET Core backend and modern frontend technologies.
 
@@ -18,7 +18,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## 🖼️ Screenshots & Demo
+## Screenshots & Demo
 
 ![Dashboard](https://github.com/tuilatoan15/Project_SE_Nhom_10/blob/main/img/admin.png)  
 *Dashboard showcasing main functionalities*
@@ -27,7 +27,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - [![.NET Core](https://img.shields.io/badge/.NET-Core-blue)](https://dotnet.microsoft.com/)
 - [![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -35,7 +35,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## ⚡ Features
+## Features
 
 - User authentication and authorization
 - Job/task management
@@ -45,7 +45,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## 📝 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -77,7 +77,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## 📊 Usage
+## Usage
 
 1. Register or login to access the system
 2. Add, update, delete jobs or tasks
@@ -86,7 +86,7 @@ Project_SE_Nhom_10 is a web application built for learning and demonstrating sof
 
 ---
 
-## 🛡️ Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -98,7 +98,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📚 References
+## References
 
 - [Software Engineering Principles](https://en.wikipedia.org/wiki/Software_engineering)
 - [Microsoft .NET Documentation](https://docs.microsoft.com/en-us/dotnet/)
@@ -106,7 +106,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 👥 Team 10
+## Team 10
 
 | STT | Họ và tên          | MSSV        |
 |:---:|:-------------------|:------------|
@@ -116,6 +116,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under **CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**.
